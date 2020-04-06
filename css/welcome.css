@@ -1,19 +1,35 @@
-.card{
+
+.logo {
+    width: 10%;
+    }
+
+div{
+    white-space: normal;
+}
+.spacer{
+    margin: 2px;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(192px, 1fr));
+    grid-gap: 1px;
+    gap: 1px;
+    align-items: start;
+    padding: 10px;
+  }
+  
+.card {
     display: grid;
     justify-items: center;
-    padding: 1em 0;
+    padding: 1em 10px;
     background: #fff;
-}
-.card .obj-image{
-    width: 256px;
-    height: 256px;
-    max-width: 100%;
-    align-self: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #888888;
-}
-p{
-    font-size: small;
+    padding-right: 100px;
+  }
+
+section{
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
 }

@@ -21,8 +21,8 @@
         if($count == 1) {
             //  session_register();
             $_SESSION['login_user'] = $myusername;
-            echo "Welcome $myusername";
-            //  header("location: welcome.php");
+            // echo "Welcome $myusername";
+            header("location: admin_home.php");
         }else {
             $error = "Your Login Name or Password is invalid";
         }

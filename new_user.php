@@ -66,7 +66,7 @@
             <table cellspacing="4" >
                 <form action = "" method = "post">
                     <tr align="left"><th>Username:</th><td> <input type="text" required pattern="\w+" name="username"></td>
-                    <tr align="left"><th >Password:</th><td> <input type="password" name="pwd1" onchange="form.pwd2.pattern = (this.value);"></td> <!--required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"-->
+                    <tr align="left"><th >Password:</th><td> <input type="password" name="pwd1" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"   onchange="form.pwd2.pattern = (this.value);"></td> <!--required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}"-->
                     <tr align="left"><th>Confirm Password:</th><td> <input type="password" required name="pwd2"></td>
                     <tr><th colspan="2"><input type = "submit" value = " Submit "/>
                 </form>
